@@ -77,20 +77,47 @@ document.addEventListener("click", (e) => {
 
 
 var swiper2 = new Swiper(".mySwiper2", {
-    effect: "coverflow",
-    grabCursor: true,
+    speed: 0,
+    effect: 'slide',
+    grabCursor: false,
     centeredSlides: true,
     slidesPerView: "auto",
-
+    allowTouchMove:false,
     initialSlide: 1,
     
     navigation: {
-        nextEl: ".swiper-button-nexts",
-        prevEl: ".swiper-button-prevs",
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
     },
     pagination: {
-        el: ".swiper-pagination",
         clickable:true,
+       
+        el: '.swiper-pagination',
+        renderBullet: function (index, className) {
+            var slideName;
+            if (index === 0) {
+                slideName = 'Alien';
+            } else if (index === 1) {
+                slideName = 'Cumcity';
+            } else if (index === 2) {
+                slideName = 'Dildoman';
+            } else if (index === 3) {
+                slideName = 'Hell';
+            } else if (index === 4) {
+                slideName = 'İnside';
+            } else if (index === 5) {
+                slideName = 'Mummy';
+            } else if (index === 6) {
+                slideName = 'Nudeless';
+            } else if (index === 7) {
+                slideName = 'Sins';
+            } else if (index === 8) {
+                slideName = 'Skeleton';
+            } else if (index === 9) {
+                slideName = 'Samurai';
+            }
+            return '<span class="' + className + '">' + slideName + '</span>';
+        },
     },
 });
 
@@ -106,40 +133,55 @@ function scrollFunction() {
 }
 const main = document.querySelector(".scroll-function")
 const door = document.querySelector(".door-container")
+const nav = document.querySelector("nav")
 window.addEventListener("scroll", (e) =>{
     console.log(document.documentElement.scrollTop);
 
-    if (document.documentElement.scrollTop > 100) {
-        main.style.transform = "scale(1.10)"
-        
-        door.style.transform = "translateX(600px)"
-        
-
-    } if (document.documentElement.scrollTop < 100) {
+   
+    if (document.documentElement.scrollTop < 100) {
         main.style.transform = "scale(1.00)"
+        main.style.opacity = "1"
         door.style.transform = "translateX(0px)"
-        
-    }
-
-    if (document.documentElement.scrollTop > 600) {
+        main.style.zIndex = "9999"
+        nav.style.visibility = "hidden";
+    } 
+    if (document.documentElement.scrollTop > 300 || document.documentElement.scrollTop > 100) {
+        main.style.transform = "scale(1.10)"
+        main.style.opacity = "1"
+        door.style.transform = "translateX(300px)"
+        main.style.zIndex = "9999"
+        nav.style.visibility = "hidden";
+    } 
+    if (document.documentElement.scrollTop > 500 || document.documentElement.scrollTop > 300) {
+        main.style.transform = "scale(1.30)"
+        main.style.opacity = "1"
+        door.style.transform = "translateX(600px)"
+        main.style.zIndex = "9999"
+        nav.style.visibility = "hidden";
+    } 
+    if (document.documentElement.scrollTop > 800 || document.documentElement.scrollTop > 500) {
         main.style.transform = "scale(1.50)"
+        main.style.opacity = "0.5"
+        door.style.transform = "translateX(600px)"
+        main.style.zIndex = "9999"
+        nav.style.visibility = "hidden";
+    } 
+    if (document.documentElement.scrollTop > 1000 || document.documentElement.scrollTop > 800) {
+        main.style.transform = "scale(1.80)"
+        main.style.zIndex = "99"
         main.style.opacity = "0"
         door.style.transform = "translateX(600px)"
-        
-        setTimeout(() => {
-            main.style.zIndex = "0"
-        }, 800);
-        
-        
+        nav.style.visibility = "hidden";
+    } 
+    if (document.documentElement.scrollTop > 1200 || document.documentElement.scrollTop > 1000) {
+        main.style.transform = "scale(1.80)"
+        main.style.zIndex = "99"
+        main.style.opacity = "0"
+        door.style.transform = "translateX(600px)"
+        nav.style.visibility = "visible";
     } 
     
-    if (document.documentElement.scrollTop < 600 || document.documentElement.scrollTop < 100) {
-        main.style.transform = "scale(1.00)"
-        main.style.top = "0"
-        main.style.opacity = ""
-        main.style.zIndex = "9999"
-        
-    }
+    
     
     
     

@@ -22,6 +22,7 @@ nav{
     position: sticky;
     top: 0;
     z-index: 1000;
+    visibility: hidden;
     transition: .3s ease all;
 }
 .scroll-function{
@@ -78,26 +79,26 @@ nav{
 }
 #about{
     position: absolute;
-    top: 28%;
+    top: 29%;
     height: 30px;
     width: 100%;
-    background: #000;
+    
     scroll-margin-top: 150px;
 }
 #secrets{
     position: absolute;
-    top: 63%;
+    top: 64%;
     height: 30px;
     width: 100%;
-    background: #000;
+    
     scroll-margin-top: 150px;
 }
 #faq{
     position: absolute;
-    top: 75%;
+    top: 80%;
     height: 30px;
     width: 100%;
-    background: #000;
+    
     scroll-margin-top: 150px;
 }
 .nav-container {
@@ -105,8 +106,8 @@ nav{
     align-items: center;
     justify-content: center;
     width: 100%;
+    background: #000;
 
-    padding: 5px;
     border-radius: 5px;    
 }
 
@@ -120,7 +121,9 @@ i {
 
 
 
-
+.nav-links-effect-container{
+    top: -40px;
+}
 .nav-link {
     color: #fff;
     text-align: left;
@@ -133,7 +136,7 @@ i {
     color: #ffffff;
     font-weight: 600;
     transition: .3s opacity ;
-    
+    height: 80px;
 }
 
 .nav-link:hover .link-numbers {
@@ -569,31 +572,16 @@ i {
 
 
 .swiper-slide {
-    position: relative;
-        
-            overflow: hidden;
+    position: relative;  
+    overflow: hidden;
 }
 
-.swiper-slide{
-    background: #444444;
-}
-
-
-
-.swiper2 .swiper-slide:not(.swiper-slide-active)::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #00000060;
-    
-    z-index: 10;
+.oriantion{
+    display: flex;
 }
 
 .swiper2 {
-    width: 400px;
+    width: 100%;
     margin: auto;
     height: auto;
 }
@@ -608,37 +596,9 @@ i {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10px;
-}
-.swiper-button-prevs {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-
-    height: 50px;
-    width: 50px;
-    background: #837758;
-    color: #fff;
-    z-index: 99;
-    border-radius: 50%;
-    cursor: pointer;
+    padding: 50px;
 }
 
-.swiper-button-nexts {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-
-    height: 50px;
-    width: 50px;
-    background: #837758;
-    color: #fff;
-    z-index: 99;
-    border-radius: 50%;
-    cursor: pointer;
-}
 /* .swiper-pagination{
     margin-bottom: 10px;
 } */
@@ -649,23 +609,47 @@ i {
 }
 
 
-
+.swiper-button-prev,.swiper-button-next{
+    color: #fff !important;
+}
 .card-img{
-    margin:20px auto;
-    width: 250px;
-    border-radius: 5px;
+    margin:20px ;
+    width: 350px;
+    border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 15px #00000030;
 }
 .card-header{
-    text-align: center;
-    font-size: 22px;
+    text-align: left;
+    font-size: 36px;
+    margin-bottom: 15px;
     font-weight: 600;
+    text-shadow: 0 5px #000000;
 }
 .card-title{
     padding: 25px;
-    font-size: 18px;
-    text-align: center;
+    font-size: 26px;
+    text-align: left;
+    text-shadow: 0 5px #000000;
+    font-weight: 600;
+}
+
+
+.swiper-pagination-bullet {
+    font-size: 22px;
+    font-weight: 600;
+    width: auto !important;
+    background: transparent !important;
+    border: 3px solid transparent;
+    border-radius: 0 !important;
+    height: auto !important;
+    padding: 15px;
+}
+.swiper-pagination-bullet {
+    opacity: 1 !important;
+}
+.swiper-pagination-bullet-active {
+    border: 3px solid rgb(255, 162, 0);
 }
 
 
@@ -677,10 +661,7 @@ i {
 
 
 
-
-
-
-@media only screen and (max-width: 1670px) {
+@media only screen and (max-width: 1270px) {
     .scroll-function{
         display: none;
     }
