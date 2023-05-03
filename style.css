@@ -23,7 +23,7 @@ nav{
     top: 0;
     z-index: 1000;
     visibility: hidden;
-    transition: .3s ease all;
+    transition: 2s ease all;
 }
 .scroll-function{
     position: fixed;
@@ -106,7 +106,7 @@ nav{
     align-items: center;
     justify-content: center;
     width: 100%;
-    background: #000;
+    background: #898886;
 
     border-radius: 5px;    
 }

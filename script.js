@@ -172,6 +172,15 @@ window.addEventListener("scroll", (e) =>{
         main.style.opacity = "0"
         door.style.transform = "translateX(600px)"
         nav.style.visibility = "visible";
+        nav.style.opacity = "0";
+    } 
+    if (document.documentElement.scrollTop > 300 || document.documentElement.scrollTop > 250) {
+        main.style.transform = "scale(3)"
+        main.style.zIndex = "99"
+        main.style.opacity = "0"
+        door.style.transform = "translateX(600px)"
+        nav.style.visibility = "visible";
+        nav.style.opacity = "1";
     } 
     // if (document.documentElement.scrollTop > 300 || document.documentElement.scrollTop > 250) {
     //     main.style.transform = "scale(1.80)"
