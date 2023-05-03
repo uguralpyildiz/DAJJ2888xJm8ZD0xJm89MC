@@ -24,6 +24,7 @@ nav{
     z-index: 1000;
     visibility: hidden;
     transition: 2s ease all;
+   opacity: 0;
 }
 .scroll-function{
     position: fixed;
