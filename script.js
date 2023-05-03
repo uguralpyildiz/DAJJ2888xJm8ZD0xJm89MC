@@ -143,6 +143,7 @@ window.addEventListener("scroll", (e) =>{
         main.style.opacity = "1"
         door.style.transform = "translateX(0px)"
         main.style.zIndex = "9999"
+        nav.style.opacity = "0";
         nav.style.visibility = "hidden";
     } 
     if (document.documentElement.scrollTop > 100 || document.documentElement.scrollTop > 50) {
@@ -150,6 +151,7 @@ window.addEventListener("scroll", (e) =>{
         main.style.opacity = "1"
         door.style.transform = "translateX(600px)"
         main.style.zIndex = "9999"
+        nav.style.opacity = "0";
         nav.style.visibility = "hidden";
     } 
     if (document.documentElement.scrollTop > 150 || document.documentElement.scrollTop > 100) {
@@ -157,6 +159,7 @@ window.addEventListener("scroll", (e) =>{
         main.style.opacity = "1"
         door.style.transform = "translateX(600px)"
         main.style.zIndex = "9999"
+        nav.style.opacity = "0";
         nav.style.visibility = "hidden";
     } 
     if (document.documentElement.scrollTop > 200 || document.documentElement.scrollTop > 150) {
@@ -164,6 +167,7 @@ window.addEventListener("scroll", (e) =>{
         main.style.opacity = "1"
         door.style.transform = "translateX(600px)"
         main.style.zIndex = "9999"
+        nav.style.opacity = "0";
         nav.style.visibility = "hidden";
     } 
     if (document.documentElement.scrollTop > 250 || document.documentElement.scrollTop > 200) {
@@ -171,8 +175,8 @@ window.addEventListener("scroll", (e) =>{
         main.style.zIndex = "99"
         main.style.opacity = "0"
         door.style.transform = "translateX(600px)"
-        nav.style.visibility = "visible";
         nav.style.opacity = "0";
+        nav.style.visibility = "visible";
     } 
     if (document.documentElement.scrollTop > 300 || document.documentElement.scrollTop > 250) {
         main.style.transform = "scale(3)"
