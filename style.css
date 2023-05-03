@@ -34,7 +34,7 @@ nav{
     z-index: 9999;
     opacity: 1;
     transform: scale(1);
-    transition: .8s ease all;
+    transition: .5s ease all;
 }
 .main-container{
     position: fixed;
@@ -51,7 +51,7 @@ nav{
         height: 100%;
     transform: translateX(0px);
     z-index: -1;
-    transition: .8s ease all;
+    transition: .3s  cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 .main-container img{
     z-index: -1;
@@ -69,7 +69,7 @@ nav{
     width: 100%;
 }
 .mask-eff{
-    height: 1200px;
+    height: 700px;
 }
 #rarity{
     position: absolute;
@@ -662,6 +662,38 @@ i {
 
 
 @media only screen and (max-width: 1270px) {
+    
+        #rarity{
+            top: 44%;
+        }
+    .oriantion{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 650px;
+        margin: auto;
+    }
+ .s-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    z-index: 9;
+    height: 50px;
+    width: 650px;
+    margin: auto;
+ }
+           .card-title,
+           .card-header {
+               text-align: center;
+
+    
+           }
+    .buttons{
+        display: none;
+    }
+
     .scroll-function{
         display: none;
     }

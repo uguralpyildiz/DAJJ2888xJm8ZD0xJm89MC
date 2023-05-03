@@ -138,48 +138,70 @@ window.addEventListener("scroll", (e) =>{
     console.log(document.documentElement.scrollTop);
 
    
-    if (document.documentElement.scrollTop < 100) {
+    if (document.documentElement.scrollTop < 50) {
         main.style.transform = "scale(1.00)"
         main.style.opacity = "1"
         door.style.transform = "translateX(0px)"
         main.style.zIndex = "9999"
         nav.style.visibility = "hidden";
     } 
-    if (document.documentElement.scrollTop > 300 || document.documentElement.scrollTop > 100) {
-        main.style.transform = "scale(1.10)"
-        main.style.opacity = "1"
-        door.style.transform = "translateX(300px)"
-        main.style.zIndex = "9999"
-        nav.style.visibility = "hidden";
-    } 
-    if (document.documentElement.scrollTop > 500 || document.documentElement.scrollTop > 300) {
-        main.style.transform = "scale(1.30)"
-        main.style.opacity = "1"
-        door.style.transform = "translateX(600px)"
-        main.style.zIndex = "9999"
-        nav.style.visibility = "hidden";
-    } 
-    if (document.documentElement.scrollTop > 800 || document.documentElement.scrollTop > 500) {
+    if (document.documentElement.scrollTop > 100 || document.documentElement.scrollTop > 50) {
         main.style.transform = "scale(1.50)"
-        main.style.opacity = "0.5"
+        main.style.opacity = "1"
         door.style.transform = "translateX(600px)"
         main.style.zIndex = "9999"
         nav.style.visibility = "hidden";
     } 
-    if (document.documentElement.scrollTop > 1000 || document.documentElement.scrollTop > 800) {
+    if (document.documentElement.scrollTop > 150 || document.documentElement.scrollTop > 100) {
         main.style.transform = "scale(1.80)"
-        main.style.zIndex = "99"
-        main.style.opacity = "0"
+        main.style.opacity = "1"
         door.style.transform = "translateX(600px)"
+        main.style.zIndex = "9999"
         nav.style.visibility = "hidden";
     } 
-    if (document.documentElement.scrollTop > 1200 || document.documentElement.scrollTop > 1000) {
-        main.style.transform = "scale(1.80)"
+    if (document.documentElement.scrollTop > 200 || document.documentElement.scrollTop > 150) {
+        main.style.transform = "scale(2)"
+        main.style.opacity = "1"
+        door.style.transform = "translateX(600px)"
+        main.style.zIndex = "9999"
+        nav.style.visibility = "hidden";
+    } 
+    if (document.documentElement.scrollTop > 250 || document.documentElement.scrollTop > 200) {
+        main.style.transform = "scale(3)"
         main.style.zIndex = "99"
         main.style.opacity = "0"
         door.style.transform = "translateX(600px)"
         nav.style.visibility = "visible";
     } 
+    // if (document.documentElement.scrollTop > 300 || document.documentElement.scrollTop > 250) {
+    //     main.style.transform = "scale(1.80)"
+    //     main.style.zIndex = "99"
+    //     main.style.opacity = "1"
+    //     door.style.transform = "translateX(600px)"
+    //     nav.style.visibility = "hidden";
+    // } 
+    // if (document.documentElement.scrollTop > 350 || document.documentElement.scrollTop > 300) {
+    //     main.style.transform = "scale(2)"
+    //     main.style.zIndex = "99"
+    //     main.style.opacity = "0.8"
+    //     door.style.transform = "translateX(600px)"
+    //     nav.style.visibility = "hidden";
+    // } 
+    // if (document.documentElement.scrollTop > 400 || document.documentElement.scrollTop > 350) {
+    //     main.style.transform = "scale(2.2)"
+    //     main.style.zIndex = "99"
+    //     main.style.opacity = "0.5"
+    //     door.style.transform = "translateX(600px)"
+    //     nav.style.visibility = "hidden";
+    // } 
+    // if (document.documentElement.scrollTop > 450 || document.documentElement.scrollTop > 400) {
+    //     main.style.transform = "scale(2.5)"
+    //     main.style.zIndex = "99"
+    //     main.style.opacity = "0"
+    //     door.style.transform = "translateX(600px)"
+    //     nav.style.visibility = "visible";
+    // } 
+
     
     
     
