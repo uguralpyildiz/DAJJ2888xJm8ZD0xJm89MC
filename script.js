@@ -176,7 +176,7 @@ window.addEventListener("scroll", (e) =>{
         main.style.opacity = "0"
         door.style.transform = "translateX(600px)"
         nav.style.opacity = "0";
-        nav.style.visibility = "visible";
+        nav.style.visibility = "hidden";
     } 
     if (document.documentElement.scrollTop > 300 || document.documentElement.scrollTop > 250) {
         main.style.transform = "scale(3)"
@@ -184,7 +184,9 @@ window.addEventListener("scroll", (e) =>{
         main.style.opacity = "0"
         door.style.transform = "translateX(600px)"
         nav.style.visibility = "visible";
-        nav.style.opacity = "1";
+        setTimeout(() => {
+            nav.style.opacity = "1";
+        }, 10);
     } 
     // if (document.documentElement.scrollTop > 300 || document.documentElement.scrollTop > 250) {
     //     main.style.transform = "scale(1.80)"
